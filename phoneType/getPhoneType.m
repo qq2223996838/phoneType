@@ -5,9 +5,10 @@
 //  Created by mooer on 2018/4/3.
 //  Copyright © 2018年 mooer. All rights reserved.
 //
-
+#import <Foundation/Foundation.h>
 #import "getPhoneType.h"
 #import "sys/utsname.h"
+#import <UIKit/UIKit.h>
 
 @implementation getPhoneType
 
@@ -97,6 +98,13 @@
     NSLog(@"\n类型 : %@ \n机型 : %@",platform, deviceMachine);
     
     return deviceMachine;
+}
+
+//获得设备系统版本
++ (NSString*)getPhoneSystem
+{
+    NSString *system = [[UIDevice currentDevice] systemVersion];
+    return system;
 }
 
 @end

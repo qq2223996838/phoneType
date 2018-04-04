@@ -13,5 +13,7 @@
 //获得设备型号
 + (NSString *)getPhoneModel;
 
+//获得设备系统版本
++ (NSString *)getPhoneSystem;
 
 @end
